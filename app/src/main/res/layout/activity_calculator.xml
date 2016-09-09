@@ -1,0 +1,236 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.calculator.sam.calculator.Calculator">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="42dp"
+            android:layout_height="fill_parent"
+            android:textSize="40dp"
+            android:background="#C51162"
+            android:text="C"
+            android:id="@+id/C" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFEBEE"
+            android:textSize="60dp"
+            android:id="@+id/Result"
+            android:text="0"
+            android:textColor="#C62828"
+            android:gravity="center|right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Numbers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/L789"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/Num7"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="7"
+                android:textSize="50dp"
+                android:background="#9575CD"/>
+
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/Num8"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="8"
+                android:textSize="50dp"
+                android:background="#7986CB"/>
+
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/Num9"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="9"
+                android:textSize="50dp"
+                android:background="#64B5F6"
+                 />
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/plus"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="+"
+                android:textSize="50dp"
+                android:background="#FF5722"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/L456"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/Num4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="4"
+                android:textSize="50dp"
+                android:background="#4FC3F7"/>
+
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/Num5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="5"
+                android:textSize="50dp"
+                android:background="#4DD0E1"/>
+
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/Num6"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="6"
+                android:textSize="50dp"
+                android:background="#4DB6AC"/>
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/minus"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="-"
+                android:textSize="50dp"
+                android:background="#AB47BC"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/L123"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/Num1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="1"
+                android:textSize="50dp"
+                android:background="#81C784"/>
+
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/Num2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="2"
+                android:textSize="50dp"
+                android:background="#AED581"/>
+
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/Num3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="3"
+                android:textSize="50dp"
+                android:background="#DCE775"/>
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/multi"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="x"
+                android:textSize="50dp"
+                android:background="#EC407A"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/L000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/vergule"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="."
+                android:textSize="50dp"
+                android:background="#00BFA5"/>
+
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/Num0"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="0"
+                android:textSize="50dp"
+                android:background="#FFA726"/>
+
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/Eql"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="="
+                android:textSize="50dp"
+                android:background="#E91E63" />
+            <Button
+                android:layout_weight="0.25"
+                android:id="@+id/div"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="/"
+                android:textSize="50dp"
+                android:background="#EF5350"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etNum1" />
+
+    <EditText
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etNum2" />
+
+</LinearLayout>
